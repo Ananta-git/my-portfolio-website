@@ -15,10 +15,10 @@ const Header: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between min-h-[70px]">
+        <div className="relative flex items-center justify-center min-h-[70px]">
 
           {/* Center Navigation - Desktop */}
-          <div className="hidden md:flex items-center justify-center space-x-6">
+          <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
             ))}
           </div>
 
-          <div className="flex justify-between"> 
+          <div className="absolute left-0 md:hidden"> 
             {/* Mobile menu button */}
             <button
               className="relative w-6 h-6 md:hidden flex flex-col justify-center items-left"
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
                   className={({ isActive }) =>
                     `text-base transition-colors duration-300 py-2 px-3 rounded-full ${
                       isActive
-                        ? 'bg-white text-black'
+                        ? 'bg-gray-800 text-white'
                         : 'text-gray-300 hover:text-primary-400'
                     }`
                   }
