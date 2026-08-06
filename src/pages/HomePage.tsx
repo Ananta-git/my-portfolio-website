@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../components/sections/Hero';
-import AboutSection from '../components/sections/AboutSection';
-import Projects from '../components/sections/Projects';
+import Projects from './ProjectsPage';
 // import Skills from '../components/sections/Skills';
 // import Experience from '../components/sections/Experience';
 // import Contact from '../components/sections/Contact';
@@ -14,10 +13,10 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <ValueSection />
       {/* <Hero2 /> */}
-      {/* <Projects />  */}
+      <Projects /> 
       <ExperienceSection />
       {/* <Skills />
       <Experience />

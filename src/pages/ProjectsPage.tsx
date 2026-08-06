@@ -1,29 +1,13 @@
 import React from 'react';
-import { Project } from '../../types';
+import { Project } from '../types';
 
-const Projects: React.FC = () => {
+const ProjectsSection: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with cart functionality, user authentication, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      description: "A productivity application for task management with real-time updates and collaboration features.",
-      technologies: ["TypeScript", "Firebase", "Tailwind CSS"],
-      githubUrl: "#",
-      liveUrl: "#",
-    },
-    {
-      id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather application with forecast data visualization and location-based services.",
-      technologies: ["React", "API Integration", "Chart.js"],
+      title: "Finwise",
+      description: "Track income, manage expenses, set budgets, and visualize your financial growth — all in one beautifully simple app.",
+      technologies: ["Next.js", "Typescript", "Firebase"],
       githubUrl: "#",
       liveUrl: "#",
     },
@@ -82,4 +66,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects;
+export default ProjectsSection;
